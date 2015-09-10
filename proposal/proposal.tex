@@ -1,0 +1,67 @@
+	\documentclass[a4paper,11pt, french]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{fullpage}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage{titlesec}
+\usepackage{tikz}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usetikzlibrary{arrows}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\bibliographystyle{plain}
+
+\usepackage{hyperref}
+\renewcommand{\thesubsection}{Stage \Alph{subsection}}
+\renewcommand{\thesubsubsection}{Q\Roman{section}.\Alph{subsection}.\arabic{subsubsection}}
+\renewcommand{\thesection}{Part \arabic{section}}
+
+
+\begin{document}
+
+\title{Project proposal}
+\author{Judith Abécassis, Timothée Lacroix, Arthur Mensch} 
+\date{\today}
+\maketitle
+
+\section*{Investigation plan for our project}
+
+We have chosen to work on the "Crowd counting with convolutional neural networks" topic, based on the previous work presented in \cite{basepaper}, \cite{multisource}. We are planning to experiment several variants of what was tested in both these papers and to benchmark their performances on the dataset used in \cite{multisource}, that contains 50 crowd images containing 64K annotated humans. Here are the variants we plan to test :
+\begin{enumerate}
+\item train regressor from \cite{basepaper} with features from \cite{basepaper} and regressor from \cite{basepaper} with features from \cite{multisource} on this benchmarking dataset to get the baseline performances;
+\item change the features and use Overfeat features using \cite{overfeat};
+\item explore some possible improvements by the MRF smoothing technique from \cite{multisource} on the different features mentionned.
+\end{enumerate}
+
+\section*{Sharing of the work between members}
+Here is how we plan to divide the work between our three team members:
+\begin{description}
+\item[Person 1] Train regressor on various layers of Overfeat
+\item[Person 2] Get baseline values with features from \cite{basepaper} and \cite{multisource}
+\item[Person 3] Explore the improvements yielded by MRF smoothing
+\end{description}
+
+
+\section*{Evaluated metrics}
+We will evaluate various improvements by using different metrics. We will evaluate each method with and without smoothing to assess its performance gain.
+\begin{description}
+\item Cross-Validated Mean Absolute Error on the cells dataset (used for regressor training) and Mean Absolute Error on the crowd dataset.
+\item Normalized Mean Absolute Error, to account for higher errors in more crowded pictures.
+\item Absolute Error and Normalized Absolute Error averaged on groups of five images, grouped by total groundtruth count.
+\end{description}
+This will allow us to precisely compare our results to those presented in \cite{basepaper} and \cite{multisource}.
+
+\bibliography{biblio}
+
+\end{document}

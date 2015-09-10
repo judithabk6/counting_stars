@@ -1,0 +1,900 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The MathWorks, Inc. Version 8.3.0.532 (R2014a). Operating System: Linux 3.17.4-1-ARCH #1 SMP PREEMPT Fri Nov 21 21:14:42 CET 2014 x86_64.
+%%Title: /home/dakeyras/Documents/cours/M2/Object Recognition/Project/presentation/figures/mrf_before.eps
+%%CreationDate: 12/19/2014  01:13:47
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    54   207   558   585
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    54   207   558   585
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0648 7020 csm
+
+    0     0  6048  4536 rc
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 6049 4537 rf
+6 w
+0 -3698 4687 0 0 3698 786 339 4 MP
+PP
+-4687 0 0 -3698 4687 0 0 3698 786 339 5 MP stroke
+gs 786 340 4688 3698 rc
+/mwscm { [/Indexed /DeviceRGB 63
+  <
+    00008f 00009f 0000af 0000bf 0000cf 0000df 0000ef 0000ff 000fff 001fff 
+    002fff 003fff 004fff 005fff 006fff 007fff 008fff 009fff 00afff 00bfff 
+    00cfff 00dfff 00efff 00ffff 0fffef 1fffdf 2fffcf 3fffbf 4fffaf 5fff9f 
+    6fff8f 7fff7f 8fff6f 9fff5f afff4f bfff3f cfff2f dfff1f efff0f ffff00 
+    ffef00 ffdf00 ffcf00 ffbf00 ffaf00 ff9f00 ff8f00 ff7f00 ff6f00 ff5f00 
+    ff4f00 ff3f00 ff2f00 ff1f00 ff0f00 ff0000 ef0000 df0000 cf0000 bf0000 
+    af0000 9f0000 8f0000 7f0000 
+  >
+] setcolorspace } bdef mwscm
+gs np 786 340 mt 0 3697 rl 4687 0 rl 0 -3697 rl cp c np
+[4687 0 0 3697 786 340] cc
+<< % Image dictionary
+  /ImageType 1
+  /Width 960 /Height 640
+  /BitsPerComponent 8
+  /Decode [0 255]
+  /ImageMatrix [960.000000 0 0 640.000000 0 0]
+  /DataSource currentfile
+  /ASCII85Decode filter
+  /RunLengthDecode filter
+>>
+image
+_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb
+_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U
+_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8
+_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4
+_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-
+_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK.
+_%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm
+_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm
+_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z
+_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh
+_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F
+_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!.
+_&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0
+_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu
+_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q
+_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb
+_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U
+_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8
+_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4
+_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-
+_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK.
+_%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm
+_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm
+_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z
+_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh
+_(*8F_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F
+_&1!._&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!.
+_&'p0_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0
+_%jcu_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu
+_%"3q_$Rpb_#_@U_%a^8_'6]4_&U9-_&pK._%FKm_%jcm_$\!Z_$.Xh_(*8F_&1!._&'p0_%jcu_%"3q
+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^
+_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]
+_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&
+_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U
+_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID
+_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"
+_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'
+_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n
+_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[
+_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l
+_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0
+_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at
+_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t
+_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!
+_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+
+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^
+_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]
+_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&
+_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U
+_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID
+_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"
+_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'
+_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n
+_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[
+_$e'l_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l
+_&C-0_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0
+_*>at_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at
+_%4?t_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t
+_%OR!_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!
+_&1!+_$7^^_#qL]_%OR&_&U9U_)oID_%sj"_%jd'_&:&n_$Rp[_$e'l_&C-0_*>at_%4?t_%OR!_&1!+
+_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e
+_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:_
+_&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32
+_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($
+_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,
+_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"
+_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#
+_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f
+_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y
+_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%
+_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"
+_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK.
+_&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?.
+_%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm
+_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!
+_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e
+_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:_
+_&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32
+_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($
+_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,
+_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"
+_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#
+_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f
+_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y
+_%=F%_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%
+_&^?"_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"
+_&pK._&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK.
+_&^?._%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?.
+_%FKm_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm
+_&U9!_$n-e_#V:__&L32_$e($_%jd,_&'p"_%"4#_$e'f_$\!Y_%=F%_&^?"_&pK._&^?._%FKm_&S"6
+_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&
+_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M
+_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)
+_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\
+_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT
+_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E
+_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h
+_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&
+_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M
+_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)
+_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\
+_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT
+_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E
+_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h
+_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&
+_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M
+_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)
+_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\
+_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT
+_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E
+_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h
+_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&
+_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M
+_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)
+_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\
+_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT
+_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E
+_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9h_$Ij\_%XX&_'=LT_*5[M_)]=E_%FL)_%+9p
+_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[
+_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(
+_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5
+_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*
+_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr
+_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((
+_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*
+_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk
+_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf
+_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*
+_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)
+_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1
+_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl
+_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>
+_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q
+_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[
+_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(
+_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5
+_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*
+_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr
+_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((
+_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*
+_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk
+_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf
+_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*
+_'Qo)_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)
+_'Zu1_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1
+_%OQl_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl
+_'?c>_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>
+_%4?q_$Rp[_%a^(_%sj5_$\"*_%FKr_$e((_'-W*_%XWk_#qLf_&C-*_'Qo)_'Zu1_%OQl_'?c>_%4?l
+JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ
+_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c.
+_%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u
+_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n
+_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<
+_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a
+_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$
+JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ
+_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c.
+_%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u
+_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n
+_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<
+_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a
+_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$
+JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ
+_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c.
+_%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u
+_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n
+_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<
+_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a
+_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$
+JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ
+_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c.
+_%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u
+_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n
+_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<
+_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a
+_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U9$JHN^n_(NPJ_(`\<_'?c._%4?a_&L2u_&U8p
+_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs
+_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6].
+_%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:
+_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h
+_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/
+_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%
+_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`
+_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs
+_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6].
+_%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:
+_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h
+_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/
+_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%
+_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`
+_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs
+_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6].
+_%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:
+_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h
+_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/
+_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%
+_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`
+_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs
+_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6].
+_%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:
+_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h
+_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/
+_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%
+_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-`_#])h_%jcs_'Hi/_'6]._%XX%_'Hi:_$n-c
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!a
+JHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32
+_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q
+_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!aJHWdnJLA8q_&C,rJJc32_&:&p_$\!e
+_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS
+_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#
+_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=
+_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'
+_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??
+_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t
+_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"
+_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-_
+_#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V
+_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&
+_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A
+_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6
+_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1
+_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*
+_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i
+_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS
+_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#
+_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=
+_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'
+_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??
+_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t
+_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"
+_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-_
+_#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V
+_'6]&_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&
+_)]=A_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A
+_&pK6_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6
+_'m,1_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1
+_%sj*_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*
+_%+9i_$%RS_$@e#_$\"=_%+:'_&^??_%4?t_&C-"_$n-__#V:V_'6]&_)]=A_&pK6_'m,1_%sj*_%+9c
+_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U
+_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o
+_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'.
+_&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'
+_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7
+_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g
+_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/
+_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U
+_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^_
+_%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)
+_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/
+_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*
+_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu
+_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4
+_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b
+_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U
+_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o
+_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'.
+_&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'
+_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7
+_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g
+_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/
+_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U
+_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^_
+_%sj)_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)
+_&L3/_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/
+_%XX*_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*
+_'$Pu_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu
+_%OR4_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4
+_%"3b_#V:U_$\!o_&:'._&C-'_&^?7_$7^g_'m,/_$7^U_$7^__%sj)_&L3/_%XX*_'$Pu_%OR4_$tn
+~>
+gr
+gr
+
+0 sg
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 939  563 mt 
+(2) s
+1252  563 mt 
+(2) s
+1564  563 mt 
+(-1) s
+1877  563 mt 
+(0) s
+2189  563 mt 
+(5) s
+2502  563 mt 
+(11) s
+2814  563 mt 
+(9) s
+3127  563 mt 
+(6) s
+3439  563 mt 
+(7) s
+3751  563 mt 
+(6) s
+4064  563 mt 
+(8) s
+4376  563 mt 
+(5) s
+4689  563 mt 
+(4) s
+5001  563 mt 
+(3) s
+5314  563 mt 
+(5) s
+ 939  933 mt 
+(1) s
+1252  933 mt 
+(2) s
+1564  933 mt 
+(0) s
+1877  933 mt 
+(2) s
+2189  933 mt 
+(4) s
+2502  933 mt 
+(7) s
+2814  933 mt 
+(7) s
+3127  933 mt 
+(18) s
+3439  933 mt 
+(16) s
+3751  933 mt 
+(3) s
+4064  933 mt 
+(6) s
+4376  933 mt 
+(4) s
+4689  933 mt 
+(5) s
+5001  933 mt 
+(6) s
+5314  933 mt 
+(6) s
+ 939 1303 mt 
+(3) s
+1252 1303 mt 
+(2) s
+1564 1303 mt 
+(-1) s
+1877 1303 mt 
+(4) s
+2189 1303 mt 
+(7) s
+2502 1303 mt 
+(8) s
+2814 1303 mt 
+(2) s
+3127 1303 mt 
+(8) s
+3439 1303 mt 
+(5) s
+3751 1303 mt 
+(8) s
+4064 1303 mt 
+(6) s
+4376 1303 mt 
+(4) s
+4689 1303 mt 
+(3) s
+5001 1303 mt 
+(7) s
+5314 1303 mt 
+(2) s
+ 939 1673 mt 
+(2) s
+1252 1673 mt 
+(1) s
+1564 1673 mt 
+(0) s
+1877 1673 mt 
+(5) s
+2189 1673 mt 
+(6) s
+2502 1673 mt 
+(9) s
+2814 1673 mt 
+(9) s
+3127 1673 mt 
+(9) s
+3439 1673 mt 
+(17) s
+3751 1673 mt 
+(5) s
+4064 1673 mt 
+(16) s
+4376 1673 mt 
+(4) s
+4689 1673 mt 
+(4) s
+5001 1673 mt 
+(8) s
+5314 1673 mt 
+(3) s
+ 939 2042 mt 
+(4) s
+1252 2042 mt 
+(2) s
+1564 2042 mt 
+(0) s
+1877 2042 mt 
+(5) s
+2189 2042 mt 
+(7) s
+2502 2042 mt 
+(6) s
+2814 2042 mt 
+(10) s
+3127 2042 mt 
+(2) s
+3439 2042 mt 
+(10) s
+3751 2042 mt 
+(4) s
+4064 2042 mt 
+(4) s
+4376 2042 mt 
+(2) s
+4689 2042 mt 
+(9) s
+5001 2042 mt 
+(9) s
+5314 2042 mt 
+(3) s
+ 939 2412 mt 
+(3) s
+1252 2412 mt 
+(0) s
+1564 2412 mt 
+(0) s
+1877 2412 mt 
+(1) s
+2189 2412 mt 
+(13) s
+2502 2412 mt 
+(9) s
+2814 2412 mt 
+(13) s
+3127 2412 mt 
+(4) s
+3439 2412 mt 
+(9) s
+3751 2412 mt 
+(4) s
+4064 2412 mt 
+(3) s
+4376 2412 mt 
+(0) s
+4689 2412 mt 
+(7) s
+5001 2412 mt 
+(2) s
+5314 2412 mt 
+(7) s
+ 939 2782 mt 
+(1) s
+1252 2782 mt 
+(-1) s
+1564 2782 mt 
+(0) s
+1877 2782 mt 
+(0) s
+2189 2782 mt 
+(5) s
+2502 2782 mt 
+(3) s
+2814 2782 mt 
+(10) s
+3127 2782 mt 
+(4) s
+3439 2782 mt 
+(9) s
+3751 2782 mt 
+(4) s
+4064 2782 mt 
+(5) s
+4376 2782 mt 
+(6) s
+4689 2782 mt 
+(9) s
+5001 2782 mt 
+(7) s
+5314 2782 mt 
+(3) s
+ 939 3151 mt 
+(1) s
+1252 3151 mt 
+(0) s
+1564 3151 mt 
+(0) s
+1877 3151 mt 
+(1) s
+2189 3151 mt 
+(10) s
+2502 3151 mt 
+(10) s
+2814 3151 mt 
+(16) s
+3127 3151 mt 
+(7) s
+3439 3151 mt 
+(2) s
+3751 3151 mt 
+(6) s
+4064 3151 mt 
+(6) s
+4376 3151 mt 
+(2) s
+4689 3151 mt 
+(6) s
+5001 3151 mt 
+(1) s
+5314 3151 mt 
+(2) s
+ 939 3521 mt 
+(3) s
+1252 3521 mt 
+(0) s
+1564 3521 mt 
+(-1) s
+1877 3521 mt 
+(1) s
+2189 3521 mt 
+(9) s
+2502 3521 mt 
+(2) s
+2814 3521 mt 
+(16) s
+3127 3521 mt 
+(3) s
+3439 3521 mt 
+(8) s
+3751 3521 mt 
+(7) s
+4064 3521 mt 
+(11) s
+4376 3521 mt 
+(3) s
+4689 3521 mt 
+(6) s
+5001 3521 mt 
+(7) s
+5314 3521 mt 
+(3) s
+ 939 3891 mt 
+(1) s
+1252 3891 mt 
+(-1) s
+1564 3891 mt 
+(1) s
+1877 3891 mt 
+(2) s
+2189 3891 mt 
+(6) s
+2502 3891 mt 
+(6) s
+2814 3891 mt 
+(7) s
+3127 3891 mt 
+(7) s
+3439 3891 mt 
+(5) s
+3751 3891 mt 
+(7) s
+4064 3891 mt 
+(8) s
+4376 3891 mt 
+(1) s
+4689 3891 mt 
+(4) s
+5001 3891 mt 
+(11) s
+5314 3891 mt 
+(3) s
+4 w
+DO
+SO
+6 w
+ 786  339 mt 5473  339 L
+ 786 4037 mt 5473 4037 L
+ 786  339 mt  786 4037 L
+5473  339 mt 5473 4037 L
+ 786 4037 mt 5473 4037 L
+ 786  339 mt  786 4037 L
+1271 4037 mt 1271 3990 L
+1271  340 mt 1271  386 L
+1171 4182 mt 
+(100) s
+1760 4037 mt 1760 3990 L
+1760  340 mt 1760  386 L
+1660 4182 mt 
+(200) s
+2248 4037 mt 2248 3990 L
+2248  340 mt 2248  386 L
+2148 4182 mt 
+(300) s
+2736 4037 mt 2736 3990 L
+2736  340 mt 2736  386 L
+2636 4182 mt 
+(400) s
+3224 4037 mt 3224 3990 L
+3224  340 mt 3224  386 L
+3124 4182 mt 
+(500) s
+3712 4037 mt 3712 3990 L
+3712  340 mt 3712  386 L
+3612 4182 mt 
+(600) s
+4201 4037 mt 4201 3990 L
+4201  340 mt 4201  386 L
+4101 4182 mt 
+(700) s
+4689 4037 mt 4689 3990 L
+4689  340 mt 4689  386 L
+4589 4182 mt 
+(800) s
+5177 4037 mt 5177 3990 L
+5177  340 mt 5177  386 L
+5077 4182 mt 
+(900) s
+ 786  914 mt  832  914 L
+5473  914 mt 5426  914 L
+ 551  958 mt 
+(100) s
+ 786 1492 mt  832 1492 L
+5473 1492 mt 5426 1492 L
+ 551 1536 mt 
+(200) s
+ 786 2070 mt  832 2070 L
+5473 2070 mt 5426 2070 L
+ 551 2114 mt 
+(300) s
+ 786 2647 mt  832 2647 L
+5473 2647 mt 5426 2647 L
+ 551 2691 mt 
+(400) s
+ 786 3225 mt  832 3225 L
+5473 3225 mt 5426 3225 L
+ 551 3269 mt 
+(500) s
+ 786 3803 mt  832 3803 L
+5473 3803 mt 5426 3803 L
+ 551 3847 mt 
+(600) s
+ 786  339 mt 5473  339 L
+ 786 4037 mt 5473 4037 L
+ 786  339 mt  786 4037 L
+5473  339 mt 5473 4037 L
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF

@@ -1,0 +1,15 @@
+*.out
+*.log
+*.pdf
+*.synctex.gz
+*.aux
+*.bbl
+*.blg
+*.kate-swp
+*.backup
+*.nav
+*.toc
+*.mexa64
+*~
+preproc
+code/toolbox/*
